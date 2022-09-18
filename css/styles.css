@@ -126,9 +126,8 @@ header {
 
 .icon-header {
   display: inline-block;
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
+  fill: #afb1b8;
 
   outline: 2px solid red;
 }
@@ -164,7 +163,9 @@ header {
 .state:hover,
 .state:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
 .section {
   margin: 0 auto;
   padding-top: 94px;
@@ -258,11 +259,6 @@ header {
   background-color: #f5f4fa;
 }
 
-.icon-features {
-  width: 70px;
-  height: 70px;
-}
-
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -288,7 +284,6 @@ header {
 }
 
 .work-title {
-  padding-top: ;
   margin-bottom: 50px;
 }
 
@@ -298,7 +293,8 @@ header {
 }
 
 .work-title,
-.about-title {
+.about-title,
+.clients-title {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -367,19 +363,55 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 2px;
+  border-radius: 100%;
+}
+
+.thumb-icon-about a:hover,
+.thumb-icon-about a:focus {
+  background-color: var(--accent-color);
 }
 
 .thumb-icon-about a:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-about {
-  width: 20px;
-  height: 20px;
+.about-icons {
+  fill: #afb1b8;
+}
+
+.about-icons:hover,
+.about-icons:focus {
+  fill: var(--primary-bcg-color);
+}
+
+/* Section clients styles */
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Page portfolio.html */
@@ -493,4 +525,53 @@ header {
 
 .adress .item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-text {
+  margin-bottom: 20px;
+
+  color: var(--primary-bcg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-links {
+  margin-left: 70px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon .item:hover,
+.social-icon .item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-log {
+  fill: var(--primary-bcg-color);
 }
